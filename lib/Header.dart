@@ -1,0 +1,44 @@
+import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
+import 'package:google_fonts/google_fonts.dart';
+
+import 'colors.dart';
+
+class Header extends StatelessWidget {
+  const Header({Key key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Padding(
+              padding: EdgeInsets.only(left: 20.0, right: 20.0, top: 30.0, bottom: 25.0),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: <Widget>[
+                  RichText(
+                    text: TextSpan(
+                      style: GoogleFonts.barlow(
+                        color: Colors.black,
+                        fontWeight: FontWeight.w900,
+                        fontSize: 20.0,
+                      ),
+                      children: <TextSpan>[
+                        TextSpan(text: 'GAME'),
+                        TextSpan(text: ' ', style: TextStyle(fontSize: 10)),
+                        TextSpan(text: 'STOP', style: TextStyle(color: acccent))
+                      ]
+                    ),
+                  ),
+                  Row(
+                    children: <Widget>[
+                      Padding(
+                        padding: const EdgeInsets.only(right: 28.0),
+                        child: Icon(Icons.search),
+                      ),
+                      Icon(Icons.filter_list)
+                    ],
+                  ),
+                ],
+              ),
+            );
+  }
+}
