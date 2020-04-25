@@ -7,3 +7,4 @@ const Color pink_faded = Color(0x00FB4273);
 const Color blue = Color(0xFFB3ECE8);
 const Color blue_faded = Color(0x00B3ECE8);
 const Color text = Color(0xFF3E4464);
+const Color extra_text = Color(0xFF876ACA);

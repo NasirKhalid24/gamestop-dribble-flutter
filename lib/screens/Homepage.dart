@@ -6,6 +6,7 @@ import 'package:gamestop_dribble/colors.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 import '../Carousel.dart';
+import '../GameCarousel.dart';
 import '../Header.dart';
 
 class Homepage extends StatelessWidget {
@@ -18,7 +19,8 @@ class Homepage extends StatelessWidget {
         child: Column(
           children: [
             Header(),
-            Carousel()
+            Carousel(),
+            GameCarousel()
           ]),
       )
     );
