@@ -4,8 +4,8 @@ import 'package:google_fonts/google_fonts.dart';
 
 import '../colors.dart';
 
-class ff_carousel extends StatelessWidget {
-  const ff_carousel({Key key}) : super(key: key);
+class doom_carousel extends StatelessWidget {
+  const doom_carousel({Key key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -29,8 +29,7 @@ class ff_carousel extends StatelessWidget {
                       fontSize: 20.0,
                     ),
                     children: <TextSpan>[
-                      TextSpan(text: 'FINAL FANTASY.VII\n'),
-                      TextSpan(text: 'REMAKE', style:GoogleFonts.barlow(fontWeight: FontWeight.bold, fontSize: 12.0))
+                      TextSpan(text: 'DOOM ETERNAL\n'),
                     ]
                   ),
                 ),
@@ -55,7 +54,7 @@ class ff_carousel extends StatelessWidget {
                       child: Transform(transform:  Matrix4.skewX(0.1), child: Icon(Icons.star_border, color: pink))
                       ),
                     ),
-                    Text("IS COMING", style: GoogleFonts.barlow(height: 0.0, color: Colors.white, fontSize: 38, fontStyle: FontStyle.italic, fontWeight: FontWeight.w900))
+                    Text("IS HERE", style: GoogleFonts.barlow(height: 0.0, color: Colors.white, fontSize: 38, fontStyle: FontStyle.italic, fontWeight: FontWeight.w900))
                   ]
                 ),
               )
@@ -63,19 +62,19 @@ class ff_carousel extends StatelessWidget {
           ],
         ),
         Positioned(
-          bottom: 0,
-          right: -40,
+          bottom: -120,
+          right: -10,
           child: Image(
-            height: 230.0,
+            height: 350.0,
             alignment: Alignment.centerRight,
-            image: AssetImage('assets/images/cloud.png'),
-            fit: BoxFit.fill
+            image: AssetImage('assets/images/doomguy.png'),
+            fit: BoxFit.cover
           ),
         ),
         Positioned(
           bottom: 0,
           child: Container(
-          height: 0,
+          height: 30,
           width: MediaQuery.of(context).size.width,
           decoration: BoxDecoration(
             gradient: LinearGradient(begin: Alignment.bottomCenter, end: Alignment.topCenter, colors: <Color>[pink, pink_faded])
