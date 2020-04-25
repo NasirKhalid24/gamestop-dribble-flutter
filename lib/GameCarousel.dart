@@ -35,7 +35,7 @@ class GameCarousel extends StatelessWidget {
               CustomCard(url:'assets/images/cod.jpg', number:1, color:pink),
               CustomCard(url:'assets/images/botw.jpg', number:2, color:Color(0xFFed744b)),
               CustomCard(url:'assets/images/sottr.png', number:3, color:Color(0xFFf1ba44)),
-              CustomCard(url:'assets/images/iss.jpg', number:4, color:Color(0xFFf1ba44))
+              CustomCard(url:'assets/images/iss.jpg', number:4, color:Color(0xFF8F250C))
             ]
           ),
         )

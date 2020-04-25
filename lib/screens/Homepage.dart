@@ -7,6 +7,7 @@ import 'package:google_fonts/google_fonts.dart';
 
 import '../Carousel.dart';
 import '../GameCarousel.dart';
+import '../GamePost.dart';
 import '../Header.dart';
 
 class Homepage extends StatelessWidget {
@@ -20,7 +21,8 @@ class Homepage extends StatelessWidget {
           children: [
             Header(),
             Carousel(),
-            GameCarousel()
+            GameCarousel(),
+            GamePost()
           ]),
       )
     );
