@@ -17,7 +17,7 @@ class Header extends StatelessWidget {
                   RichText(
                     text: TextSpan(
                       style: GoogleFonts.barlow(
-                        color: Colors.black,
+                        color: text,
                         fontWeight: FontWeight.w900,
                         fontSize: 20.0,
                       ),
