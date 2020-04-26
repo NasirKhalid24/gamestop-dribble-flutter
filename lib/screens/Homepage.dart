@@ -28,13 +28,15 @@ class _HomepageState extends State<Homepage>{
   Widget build(BuildContext context) {
     return Scaffold(
       body: SafeArea(
-        child: Column(
-          children: [
-            Header(),
-            Carousel(),
-            GameCarousel(),
-            GamePost()
-          ]),
+        child: SingleChildScrollView(
+          child: Column(
+            children: [
+              Header(),
+              Carousel(),
+              GameCarousel(),
+              GamePost()
+            ]),
+        ),
       ),
       bottomNavigationBar: Stack(
         children: <Widget>[
