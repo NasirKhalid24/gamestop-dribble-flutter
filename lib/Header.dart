@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
+import 'package:gamestop_dribble/screens/Library.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 import 'colors.dart';
@@ -34,7 +35,10 @@ class Header extends StatelessWidget {
                         padding: const EdgeInsets.only(right: 28.0),
                         child: Icon(Icons.search),
                       ),
-                      Icon(Icons.filter_list)
+                      IconButton(icon: Icon(Icons.filter_list), onPressed: () {
+                        Navigator.push(context, MaterialPageRoute(builder: (context) => Library()));
+                      }
+                      )
                     ],
                   ),
                 ],
