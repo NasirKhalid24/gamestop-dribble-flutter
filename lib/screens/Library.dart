@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 
+import '../LibraryFilter.dart';
 import '../LibraryGames.dart';
 import '../LibraryHeader.dart';
 
@@ -21,7 +22,8 @@ class _LibraryState extends State<Library> {
           child: Column(
             children: [
               LibraryHeader(),
-              LibraryGames()
+              LibraryGames(),
+              LibraryFilter(),
             ]),
         ),
       )

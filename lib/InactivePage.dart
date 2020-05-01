@@ -18,8 +18,8 @@ class InactivePage extends StatelessWidget {
         boxShadow: [
           BoxShadow(
             color: Colors.black12,
-            blurRadius: 7,
-            offset: Offset(10, 7),
+            blurRadius: 20,
+            offset: Offset(15, 0),
           )
         ]
       ),

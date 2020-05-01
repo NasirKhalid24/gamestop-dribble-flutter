@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'ActivePage.dart';
-import 'Game.dart';
 import 'InactivePage.dart';
+import 'list_of_games.dart';
 
 class LibraryGames extends StatefulWidget {
   LibraryGames({Key key}) : super(key: key);
@@ -15,12 +15,6 @@ class _LibraryGamesState extends State<LibraryGames> {
 
   int currentPage = 0;
   PageController ctrl = PageController(viewportFraction: 0.6);
-  List<Game> games = [
-    Game('assets/images/ow.jpg', 'Overwatch', 2, 4, 2019, 42, ['FPS', 'ACTION']),
-    Game('assets/images/w.jpg', 'The Witcher 3', 12, 8, 2019, 20, ['RPG', 'ARPG']),
-    Game('assets/images/wy.png', 'Wolfenstein: Youngblood', 26, 7, 2019, 62, ['FPS', 'ACTION']),
-    Game('assets/images/d2.jpg', 'Destiny 2', 6, 9, 2019, 87, ['ACTION', 'FPS', 'RPG']),
-  ];
 
   @override
   void initState() {
@@ -36,7 +30,6 @@ class _LibraryGamesState extends State<LibraryGames> {
           currentPage = 0;
         });
       }
-      print(currentPage);
     });
     super.initState();
   }
@@ -49,6 +42,7 @@ class _LibraryGamesState extends State<LibraryGames> {
   @override
   Widget build(BuildContext context) {
     return Container(
+      margin: EdgeInsets.only(bottom: 10),
       alignment: Alignment.centerLeft,
       width: double.infinity,
       height: 280,
